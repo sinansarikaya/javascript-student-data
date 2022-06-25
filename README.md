@@ -1,5 +1,5 @@
 # student-point
 JavaScript student point app
 
-# Gif
+# DEMO
 ![](https://github.com/sinansarikaya/student-point/blob/main/student-point-app.gif)
