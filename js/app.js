@@ -21,19 +21,31 @@ submit.addEventListener("click", () => {
     const newData = document.createElement("div");
     const dataName = document.createElement("div");
     const dataScore = document.createElement("div");
+    const deleteEl = document.createElement("span");
+    const iEl = document.createElement("i");
+
     newData.classList.add("info-item");
     dataName.classList.add("info-name");
     dataScore.classList.add("info-score");
+    deleteEl.classList.add("info-delete");
+    iEl.classList.add("fa-solid", "fa-xmark");
 
     dataName.innerText = nameDom.value;
     dataScore.innerText = scoreDom.value;
 
+    deleteEl.appendChild(iEl);
     infoContainer.appendChild(newData);
     newData.appendChild(dataName);
     newData.appendChild(dataScore);
+    newData.appendChild(deleteEl);
 
     nameDom.value = "";
     scoreDom.value = "";
+
+    deleteEl.addEventListener("click", () => {
+      console.log("Delete data");
+      infoContainer.removeChild(deleteEl.parentNode);
+    });
   } else {
     alert("Error :", "You should fill the form!", "#f46677");
   }

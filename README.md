@@ -1,8 +1,29 @@
-# student-point
-JavaScript student point app
+# Javascript Student Data
 
-# DEMO
+![GitHub last commit](https://img.shields.io/github/last-commit/sinansarikaya/javascript-student-data?style=flat-square)
 
-## <a href="https://sinansarikaya.github.io/student-point/"> Click here for demo </a>
+Responsive student data system made using JavaScript
 
-![](https://github.com/sinansarikaya/student-point/blob/main/student-point-app.gif)
+<hr />
+
+### Installation Options
+
+```
+$ git clone https://github.com/sinansarikaya/javascript-student-data.git
+```
+
+<hr />
+
+### Demo
+
+#### [View Demo](https://sinansarikaya.github.io/javascript-student-data/)
+
+![JavaScript Student Data](./img/demo.png)
+
+<hr />
+
+### Try yourself
+
+You can try to make it yourself by looking at the design in Figma.
+
+#### [View the design in Figma](https://www.figma.com/file/A02QpgK4dDfB43KVhTWYmD/student-data?node-id=1%3A24)
