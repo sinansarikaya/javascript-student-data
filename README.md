@@ -18,7 +18,7 @@ $ git clone https://github.com/sinansarikaya/javascript-student-data.git
 
 #### [View Demo](https://sinansarikaya.github.io/javascript-student-data/)
 
-![JavaScript Student Data](./img/demo.png)
+![JavaScript Student Data](./img/demo.jpeg)
 
 <hr />
 
