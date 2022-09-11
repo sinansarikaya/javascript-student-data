@@ -6,6 +6,8 @@ const nameDom = document.querySelector("#name");
 const scoreDom = document.querySelector("#score");
 const infoContainer = document.querySelector(".info-container");
 
+let scoreCheck = false;
+
 const alert = (title, message, type) => {
   alertTitle.innerText = title;
   alertMessage.innerText = message;
@@ -16,7 +18,15 @@ const alert = (title, message, type) => {
   }, 2000);
 };
 submit.addEventListener("click", () => {
-  if (nameDom.value && scoreDom.value) {
+  let onTimeAlert = false;
+  if (Number(scoreDom.value) <= 100 && Number(scoreDom.value) >= 0) {
+    scoreCheck = true;
+  } else {
+    scoreCheck = false;
+    onTimeAlert = true;
+    alert("Error :", "Score must be between 100 and 0!", "#f46677");
+  }
+  if (nameDom.value && scoreDom.value && scoreCheck) {
     alert("Success :", "Data successfully added!", "#3EB281");
     const newData = document.createElement("div");
     const dataName = document.createElement("div");
@@ -43,11 +53,13 @@ submit.addEventListener("click", () => {
     scoreDom.value = "";
 
     deleteEl.addEventListener("click", () => {
-      console.log("Delete data");
       infoContainer.removeChild(deleteEl.parentNode);
+      alert("Warning :", "Selected data deleted!", "#f5ab6a");
     });
   } else {
-    alert("Error :", "You should fill the form!", "#f46677");
+    if (!onTimeAlert) {
+      alert("Error :", "You should fill the form!", "#f46677");
+    }
   }
 });
 
