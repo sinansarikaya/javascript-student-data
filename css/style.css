@@ -104,6 +104,10 @@
   flex-direction: column;
   gap: 2rem;
 }
+#container .data-add .data-form .logo {
+  width: 12rem;
+  margin: 0 auto;
+}
 #container .data-add .data-form h1.title {
   color: #8d99ae;
 }
